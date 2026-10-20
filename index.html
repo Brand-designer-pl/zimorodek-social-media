@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Zimorodek — grafiki Facebook</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --navy: #004978; --blue: #0080D1; --orange: #E07C00; --paper: #e6f0f3; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: #0d3552; font-family: "Manrope", system-ui, sans-serif; }
+  main { max-width: 1240px; margin: 0 auto; padding: 48px 16px 80px; }
+  h1 { margin: 0; font-size: clamp(32px, 5vw, 52px); font-weight: 500; letter-spacing: -.03em; color: var(--navy); }
+  h2 { margin: 56px 0 18px; font-size: 14px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--navy);
+       display: flex; align-items: center; gap: 12px; }
+  h2::before { content: ""; width: 32px; height: 3px; background: var(--orange); border-radius: 2px; }
+  p.lead { margin: 14px 0 0; font-size: 18px; line-height: 1.5; max-width: 720px; }
+  .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .links a { display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 30px; text-decoration: none;
+             background: linear-gradient(90deg, var(--navy), var(--blue)); color: #fff; font-weight: 500; }
+  .links a.alt { background: #fff; color: var(--navy); }
+  .cover img { width: 100%; height: auto; display: block; border-radius: 14px; box-shadow: 0 20px 50px -30px rgba(0,50,80,.5); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
+  .grid a { display: block; border-radius: 14px; overflow: hidden; box-shadow: 0 20px 50px -30px rgba(0,50,80,.5); }
+  .grid img { width: 100%; height: auto; display: block; aspect-ratio: 4 / 5; }
+  small { display: block; margin-top: 8px; font-size: 14px; opacity: .7; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Zimorodek — grafiki na Facebooka</h1>
+  <p class="lead">Tło strony i szablony postów w kierunku wizualnym landingu aplikacji. Kliknij grafikę, aby otworzyć plik PNG w pełnym rozmiarze.</p>
+  <div class="links">
+    <a href="szablony.html">Szablony (najedź, aby zobaczyć układ)</a>
+    <a class="alt" href="tlo-facebook.html">Tło — wersja HTML</a>
+  </div>
+
+  <h2>Tło strony · 1640×624</h2>
+  <a class="cover" href="eksport/tlo-facebook.png"><img src="eksport/tlo-facebook.png" alt="Tło Facebook: zimorodek z napisem ZIMORODEK za ptakiem" width="1640" height="624"></a>
+
+  <h2>Posty · 1080×1350</h2>
+  <div class="grid">
+    <a href="eksport/post-1-funkcja.png"><img src="eksport/post-1-funkcja.png" alt="Szablon 1 — funkcja" loading="lazy" width="1080" height="1350"></a>
+    <a href="eksport/post-2-ekran-aplikacji.png"><img src="eksport/post-2-ekran-aplikacji.png" alt="Szablon 2 — ekran aplikacji" loading="lazy" width="1080" height="1350"></a>
+    <a href="eksport/post-3-liczba.png"><img src="eksport/post-3-liczba.png" alt="Szablon 3 — liczba" loading="lazy" width="1080" height="1350"></a>
+    <a href="eksport/post-4-haslo.png"><img src="eksport/post-4-haslo.png" alt="Szablon 4 — hasło" loading="lazy" width="1080" height="1350"></a>
+    <a href="eksport/post-5-lista.png"><img src="eksport/post-5-lista.png" alt="Szablon 5 — lista" loading="lazy" width="1080" height="1350"></a>
+    <a href="eksport/post-6-komunikat.png"><img src="eksport/post-6-komunikat.png" alt="Szablon 6 — komunikat" loading="lazy" width="1080" height="1350"></a>
+    <a href="eksport/post-7-ptak-pol.png"><img src="eksport/post-7-ptak-pol.png" alt="Szablon 7 — ptak na pół" loading="lazy" width="1080" height="1350"></a>
+    <a href="eksport/post-8-aplikacja.png"><img src="eksport/post-8-aplikacja.png" alt="Szablon 8 — aplikacja" loading="lazy" width="1080" height="1350"></a>
+  </div>
+  <small>Treści przykładowe oparte na materiałach Zimorodka; ekrany aplikacji to prawdziwe zrzuty.</small>
+</main>
+</body>
+</html>

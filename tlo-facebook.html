@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zimorodek — tło Facebook</title>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500;600&display=block" rel="stylesheet">
+<style>
+  /* Okładka strony na Facebooku: 1640×624 (wyświetlana 820×312 na komputerze,
+     na telefonie widoczny środek ok. 1110 px szerokości). Kadr = ostatnia klatka filmu z landingu. */
+  html, body { margin: 0; background: #cfe3ea; }
+  .cover { position: relative; width: 1640px; height: 624px; overflow: hidden; }
+  /* kadr i maska mają ten sam rozmiar i pozycję → napis chowa się dokładnie za ptakiem */
+  .frame, .word {
+    position: absolute; left: 0; top: -92px; width: 1640px; height: 916px;
+  }
+  .frame { object-fit: cover; }
+  .word {
+    -webkit-mask: url("assets/maska-napisu.png") 0 0 / 100% 100% no-repeat;
+    mask: url("assets/maska-napisu.png") 0 0 / 100% 100% no-repeat;
+    text-align: center;
+  }
+  .word span {
+    position: absolute; left: 0; right: 0; top: 186px;
+    font-family: "Italiana", "Didot", serif; font-size: 210px; line-height: 1;
+    letter-spacing: -.005em; white-space: nowrap;
+    background: linear-gradient(to bottom, rgba(255,255,255,.86) 0%, rgba(255,255,255,.56) 50%, rgba(255,255,255,.08) 96%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .tag {
+    position: absolute; right: 278px; bottom: 96px; text-align: right;
+    font-family: "Manrope", system-ui, sans-serif; color: #004978;
+  }
+  .tag b { display: block; font-weight: 500; font-size: 25px; letter-spacing: -.01em; }
+  .tag b i { font-style: normal; color: #E07C00; }
+  .tag small { display: block; margin-top: 8px; font-size: 15px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; opacity: .7; }
+</style>
+</head>
+<body>
+<div class="cover">
+  <img class="frame" src="assets/kadr-hero.png" alt="">
+  <div class="word"><span>ZIMORODEK</span></div>
+  <div class="tag">
+    <b>Zezwolenia, mapy <i>&amp;</i> łowiska</b>
+    <small>zimorodek.pl</small>
+  </div>
+</div>
+</body>
+</html>
