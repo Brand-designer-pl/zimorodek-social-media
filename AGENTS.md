@@ -2,6 +2,10 @@
 
 Grafiki na Facebooka w kierunku wizualnym landingu `../hero-aplikacje` (Manrope + Italiana, granat #004978, niebieski #0080D1, akcent #E07C00, jasna woda, mleczne szkło, soczyste zdjęcia zimorodka). Pracuj po polsku.
 
+## Repozytorium i podgląd
+- Repo (publiczne, decyzja użytkownika 2026-10-20): https://github.com/Brand-designer-pl/zimorodek-social-media
+- Podgląd (GitHub Pages z main): https://brand-designer-pl.github.io/zimorodek-social-media/ — `index.html` = galeria PNG + linki do szablonów. Po zmianach: `python3 eksport.py`, commit i push na main (publikuj tylko na polecenie).
+
 ## Pliki
 - `tlo-facebook.html` → `eksport/tlo-facebook.png` (1640×624). Kadr = ostatnia klatka filmu z landingu (`assets/kadr-hero.png`), napis „ZIMORODEK” za ptakiem przez `assets/maska-napisu.png` (ten sam rozmiar i pozycja co kadr). Napis i hasło mieszczą się w środkowych ~1110 px widocznych na telefonie.
 - `szablony.html` — 8 szablonów postów 1080×1350 (4:5): 1 funkcja, 2 ekran aplikacji, 3 liczba, 4 hasło (jezioro + jasna nakładka), 5 lista (bez tła — decyzja użytkownika), 6 komunikat, 7 ptak na pół (kadr z landingu, napis za ptakiem przez maskę `data-mask`), 8 aplikacja ogólna (styl jak Longwave: logo, hasło, telefon, kafle zalet). Teksty edytuj w HTML; podgląd wszystkich: `szablony.html`, jeden: `szablony.html?p=3`. Logo wbudowane jako `<symbol id="logo">`.
